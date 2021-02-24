@@ -22,4 +22,19 @@ Routes will need to be provided that:
 * Return all payer point balances.
 
 ## How To Setup Locally
+First off, this repo utilizes JavaScript and thus uses Node.js.  If you don't currently have it downloaded on your computer, the link is here to download:
+https://nodejs.org/en/
+
+
+Once you have node installed you will need to make sure you have the packages installed in your editor.
+```
+npm install
+```
+```
+npm init -yes
+```
+```
+npm install express
+```
+
 
