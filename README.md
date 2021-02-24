@@ -1,3 +1,3 @@
 # Implementing Fetch Reward's Back End Challenge
 
-![Alt text](img\Postimg.JPG)
+![image](img\Postimg.JPG?raw=true "post example")
