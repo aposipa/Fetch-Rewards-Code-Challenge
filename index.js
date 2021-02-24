@@ -5,7 +5,7 @@ app.use(express.json());
 
 
 const transactions = [
-    // Un-comment these examples entries if you want to have them ready on server start for testing and don't want to manually enter examples every time, they are the examples used in the problem pdf.
+    // Un-comment these examples entries if you want to have some example entries ready on server start, they are the examples used in the problem pdf.
 
     // {payer: 'DANNON', points: 1000, timestamp: new Date(2020, 10, 2, 14, 0, 0)},
     // {payer: 'DANNON', points: -200, timestamp: new Date(2020, 9, 31, 15, 0, 0)},

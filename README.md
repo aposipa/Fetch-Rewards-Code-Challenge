@@ -97,13 +97,22 @@ Will add a new transaction with a name, points, and timestamp the user enters.
 ## POST /spending
 ![](img/postSpending.PNG)
 ```
+{
     "points": 5000
+}
 ```
 * Points have to be a positive number
 
 Will spend points entered, taken out of current account transactions based on the two primary rules:
 * The oldest transaction's points will be spent first.
 * No payer's points go negative.
+If entered correctly, you will get a message stating points have been taken out.  You can then use one of the above GET paths to see their updated points totals.
+
+
+Lastly, in the index.js file near the top, there are five sample transactions ready-to-go to pre-populate when server starts just so you have examples to use instead of manually entering a bunch of sample transactions, simply un-comment them out by deleting the // or ctrl + /.
+
+
+Thanks!
 
 
 
