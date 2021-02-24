@@ -62,10 +62,13 @@ EVERY PATH will begin with http://localhost:3000 (or whichever port your server 
 
 
 ## GET /transactions
+![](img/getTransactions.PNG)
 Shows all current transactions
 ## GET /points_balance 
+![](img/getPointBalance.PNG)
 Shows the total balance of each users points balance
 ## GET /transactions/payername 
+![](img/getTransactionsName.PNG)
 Shows every individual transaction made by the account name entered in the path.
 * For example, if you wanted all the transactions made by the payer named Greg.  You would GET http://localhost:3000/transactions/Greg
 
