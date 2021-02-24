@@ -106,7 +106,7 @@ Will add a new transaction with a name, points, and timestamp the user enters.
 Will spend points entered, taken out of current account transactions based on the two primary rules:
 * The oldest transaction's points will be spent first.
 * No payer's points go negative.
-If entered correctly, you will get a message stating points have been taken out.  You can then use one of the above GET paths to see their updated points totals.
+If entered correctly, you will get a message showing the amount of points taken out of each account by payer.  You can then use one of the above GET paths to see their updated points totals.
 
 
 ### Final Note

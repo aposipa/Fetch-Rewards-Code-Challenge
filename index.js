@@ -63,6 +63,8 @@ app.post('/spending', (req, res) => {
         res.status(404).send("You need to select a point value that is also greater than 0 in order to make a proper spend call.");
     }
 
+    const beforeBalance = transactions.reduce((a, {payer, points}) => (a[payer] = (a[payer] || 0) + +points, a), {});
+
     let spend = req.body.points;
     let spendPoints = spend
 
@@ -87,7 +89,18 @@ app.post('/spending', (req, res) => {
                 }
             }
     }
-    res.status(200).send("Points have been taken out of their respective accounts.");
+    
+    const afterBalance = transactions.reduce((a, {payer, points}) => (a[payer] = (a[payer] || 0) + +points, a), {});
+    const finalBalance = {};
+
+    // will find the difference in the balance totals before and after spending and send out the total amount of points taken out of each account
+    for(i = 0; i < Object.keys(beforeBalance).length; i ++){
+        pointsDeducted = ((Object.values(beforeBalance)[i] - Object.values(afterBalance)[i]) * -1);
+        finalBalance[Object.keys(beforeBalance)[i]] = pointsDeducted
+    }
+
+
+    res.status(200).send(finalBalance);
 });
 
 // This will add a new transaction to the current list by name, points, and timestamp given by the user
