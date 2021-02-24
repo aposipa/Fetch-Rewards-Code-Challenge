@@ -5,12 +5,16 @@ app.use(express.json());
 
 
 const transactions = [
-    {payer: 'DANNON', points: 1000, timestamp: new Date(2020, 10, 2, 14, 0, 0)},
-    {payer: 'DANNON', points: -200, timestamp: new Date(2020, 9, 31, 15, 0, 0)},
-    {payer: 'DANNON', points: 300, timestamp: new Date(2020, 9, 31, 10, 0, 0)},
-    {payer: 'MILLER CORS', points: 10000, timestamp: new Date(2020, 10, 1, 14, 0, 0)},
-    {payer: 'UNILEVER', points: 200, timestamp: new Date(2020, 9, 31, 11, 0, 0)}
+    // Un-comment these examples entries if you want to have them ready on server start for testing and don't want to manually enter examples every time, they are the examples used in the problem pdf.
+
+    // {payer: 'DANNON', points: 1000, timestamp: new Date(2020, 10, 2, 14, 0, 0)},
+    // {payer: 'DANNON', points: -200, timestamp: new Date(2020, 9, 31, 15, 0, 0)},
+    // {payer: 'DANNON', points: 300, timestamp: new Date(2020, 9, 31, 10, 0, 0)},
+    // {payer: 'MILLER CORS', points: 10000, timestamp: new Date(2020, 10, 1, 14, 0, 0)},
+    // {payer: 'UNILEVER', points: 200, timestamp: new Date(2020, 9, 31, 11, 0, 0)}
+
 ];
+
 // Sorts all the current transactions from oldest => newest, based on timestamp
 function sortedTransactions() { 
     transactions.sort(function(a,b){
