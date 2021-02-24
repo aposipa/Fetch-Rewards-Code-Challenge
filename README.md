@@ -70,14 +70,40 @@ Shows the total balance of each users points balance
 ## GET /transactions/payername 
 ![](img/getTransactionsName.PNG)
 Shows every individual transaction made by the account name entered in the path.
-* For example, if you wanted all the transactions made by the payer named Greg.  You would GET http://localhost:3000/transactions/Greg
+* For example, if you wanted all the transactions made by the payer named Greg.  You would GET http://localhost:3000/transactions/Greg'
 
 # POST REQUESTS
 Post requests require you to enter various information related to that request when sending.  
-I will include the format and what is required to post for each path, but here's a picture of how it looks in the actual Postman client:
+When entering a post in Postman, you need to use the proper format and in the right section.  For all POST requests below you will need to be under the "Body" tab, then click "raw", and then set the text to JSON.
+![](img/postRequestex.PNG)
+
+If you do not enter the information in the correct format or meet the specified requirements you will get an error message.
+I will include the format and what is required to post for each path.
 
 ## POST /transactions
+![](img/postTransactions.PNG)
+Will add a new transaction with a name, points, and timestamp the user enters.
+```
+{
+    "payer": "Name",
+    "points": 100,
+    "timestamp" "2020, 10, 31, 12:00:00"
+}
+```
+* The name has to be more than three letters
+* The points has to be a number
+* The timestamp follows the format of "year, month, day, hours:seconds:milliseconds"
 
+## POST /spending
+![](img/postSpending.PNG)
+```
+    "points": 5000
+```
+* Points have to be a positive number
+
+Will spend points entered, taken out of current account transactions based on the two primary rules:
+* The oldest transaction's points will be spent first.
+* No payer's points go negative.
 
 
 
