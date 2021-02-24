@@ -53,7 +53,7 @@ Now, with Postman up and running, to start you enter the following address in th
 
 
 Also make sure the associated request matches that path, for example a GET request will have a different outcome than a POST request if it has the same endpoint.
-![](img/postmanexample.jpg)
+![](img/postmanex.png)
 
 Here are the following paths.  
 EVERY PATH will begin with http://localhost:3000 (or whichever port your server is running on) so when a path below is listed as /transactions , it means the full path to be entered will be http://localhost:3000/transactions.
