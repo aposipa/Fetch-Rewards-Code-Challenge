@@ -1,11 +1,11 @@
 # Implementing Fetch Reward's Back End Challenge
 
-In this coding exercise, I have written a web service that accepts HTTP requests that returns responses based on outlined conditions.
+In this coding exercise, I have written a web service that accepts HTTP requests that returns responses based on the outlined conditions below.
 
 ### Background
 Our users have points in their accounts. Users only see a single balance in their accounts. But for reporting purposes we actually track their
-points per payer/partner. In our system, each transaction record contains: payer (string), points (integer), timestamp (date).
-For earning points it is easy to assign a payer, we know which actions earned the points. And thus which partner should be paying for the points.
+points per payer/partner. In our system, each transaction record contains: payer (string), points (integer), timestamp (date). <br />
+For earning points it is easy to assign a payer, we know which actions earned the points. And thus which partner should be paying for the points. <br />
 When a user spends points, they don't know or care which payer the points come from. But, our accounting team does care how the points are
 spent. There are two rules for determining what points to "spend" first:
 * We want the oldest points to be spent first (oldest based on transaction timestamp, not the order they’re received)
