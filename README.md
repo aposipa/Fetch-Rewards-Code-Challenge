@@ -46,6 +46,8 @@ This will run the server and tell you which port to use.  The port number will b
 
 
 If for some reason npm start doesn't work, the script might not be included when you cloned the repo.  Check the package.json file and check the "start script" to make sure its there.
+
+
 ![](img/npmstart.PNG)
 
 
