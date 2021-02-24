@@ -45,6 +45,10 @@ npm start
 This will run the server and tell you which port to use.  The port number will be based on your local environment, but it defaults to 3000, so for purposes of the examples below I will use 3000, but please use the port number displayed in your log after running npm start.
 
 
+If for some reason npm start doesn't work, the script might not be included when you cloned the repo.  Check the package.json file and check the "start script" to make sure its there.
+![](img/npmstart.PNG)
+
+
 ## Running The Server
 Once you're up and running you will need an API platform to see the server in action.  You may have experience with other platforms and can use them, but for these examples and my personal preference I use and recommend Postman.  The link to download Postman is here: https://www.postman.com/downloads/
 
