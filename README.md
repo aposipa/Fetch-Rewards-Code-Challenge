@@ -38,7 +38,7 @@ npm install express
 ```
 
 
-You should now be good to go to run the server and to do that all you have to do in the terminal is enter:
+You should now be good to go to run the server and to do that, all you have to do in the terminal is enter:
 ```
 npm start
 ```
@@ -76,7 +76,7 @@ Shows the total balance of each users points balance
 ## GET /transactions/payername 
 ![](img/getTransactionsName.PNG)
 Shows every individual transaction made by the account name entered in the path.
-* For example, if you wanted all the transactions made by the payer named Greg.  You would GET http://localhost:3000/transactions/Greg'
+* For example, if you wanted all the transactions made by the payer named Greg.  You would GET http://localhost:3000/transactions/Greg
 
 # POST REQUESTS
 Post requests require you to enter various information related to that request when sending.  
